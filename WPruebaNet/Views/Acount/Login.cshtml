@@ -1,0 +1,74 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba Net / Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="~/css/login.css">
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/sweetalert/js/sweetalert.js"></script>
+</head>
+<body class="container-fluid">
+    <header class="w-100">
+        <div id="logo" class="p-2">
+            <i class="fa-brands fa-edge-legacy"></i>duSoft
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="col ">
+            <form class="form-signin">
+                <div class="row">
+                    <div class="col text-center">
+                        <h3 class="text-dark">Prueba .NET</h3>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <div class="form-group">
+                            <i class="fa-solid fa-user text-muted ico-btn-log"></i>
+                            <input type="text" class="w-100 form-control" placeholder="Usuario" id="txtUsuario" name="Usuario">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <div class="form-group">
+                            <i class="fa-solid fa-key text-muted ico-btn-log"></i>
+                            <input type="password" class="w-100 form-control" placeholder="Contraseña" id="txtPassword" name="PasswordU">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col-6 text-left">
+                        <a href=@Url.Action("Registro", "Usuario") class="text-primary">Registrar</a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <input id="btnIniciar" type="button" class="btn btn-primary ml-2 ml-sm-1" value="Iniciar sesión" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="w-100">
+        <p class="pt-4 text-center">Edusoft - Todos los derechos reservados @DateTime.Now.Year</p>
+    </footer>
+    <input type="hidden" id="hfUrlInicio" value="@Url.Action("Inicio", "Usuario")" />
+    <input type="hidden" id="hfUrlAtentificar" value="@Url.Action("AuthUsuario", "Usuario")" />
+</body>
+</html>
+
+@{
+    Random rnd = new Random();
+    string r = rnd.Next().ToString();
+    <script src="~/js/validacion.js?v=@r"></script>
+    <script src="~/js/login.js?v=@r"></script>
+
+}

@@ -1,0 +1,116 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size:14px;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+html, body {
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    min-height: 20rem;
+    color: inherit;
+    padding: 0 !important;
+    z-index: -99 !important;
+    background-image: url('../img/fondo1.jpg'), linear-gradient(45deg, #03315f 0%, #03315f 30%, #03315f 70%, #03315f 100%);
+    border-bottom: 8px solid #DF1306;
+}
+
+#logo {
+    font-size:2em;
+    color:#FFFFFF;
+}
+
+.form-signin {
+    max-width: 620px;
+    padding: 45px 35px 65px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    border: 0px 2px 2px 0px solid #696969;
+    box-shadow: 10px 16px 37px -11px rgba(50,50,50,.89);
+}
+
+.wrapper {
+    margin-top: -10%;
+    margin-bottom: 15%;
+}
+
+input[type="text"], input[type="password"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left:25px;
+}
+
+.form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+}
+
+footer {
+    background: #373737;
+    min-height: 100px !important;
+    color: #FFFFFF;
+    text-align: center;
+    bottom:-100px !important;
+    position:relative;
+}
+
+.ico-btn-log {
+    font-size: 20px;
+    position: absolute;
+    left: 18px;
+    z-index: 222;
+    top: 12px;
+}
+
+.validate-error {
+    border: 1px solid #ca2800;
+}
+
+.validate-ok {
+    border: 1px solid #1db000;
+}
+
+.validate-error-chk {
+    outline: 2px solid #ca2800;
+}
+
+
+.validate-error {
+    border: 1px solid #ca2800 !important;
+}
+
+.validate-ok {
+    border: 1px solid #1db000;
+}
+
+.validate-error-chk {
+    outline: 2px solid #ca2800;
+}

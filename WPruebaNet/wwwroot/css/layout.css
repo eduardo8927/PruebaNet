@@ -1,0 +1,86 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+html, body {
+    font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    min-height: 100px;
+    color: inherit;
+    padding: 0 !important;
+    z-index: -99 !important;
+    background-image: url('../img/fondo1.jpg'), linear-gradient(45deg, #03315f 0%, #03315f 30%, #03315f 70%, #03315f 100%);
+    border-bottom: 8px solid #DF1306;
+}
+
+#logo {
+    font-size: 2em;
+    color: #FFFFFF;
+}
+
+footer {
+    background: #373737;
+    min-height: 100px !important;
+    color: #FFFFFF;
+    text-align: center;
+    bottom: -100px !important;
+    position: relative;
+}
+
+.font-25 {
+    font-size:25px;
+}
+
+
+.validate-error {
+    border: 1px solid #ca2800;
+    box-shadow: 0 0 5px 1px #ca2800;
+}
+
+
+.validate-error-chk {
+    outline: 2px solid #ca2800;
+    box-shadow: 0 0 5px 1px #ca2800;
+}
+
+#logout {
+    float: left;
+    position: absolute;
+    right: 0px;
+    color: #FFF;
+    font-size: 15px;
+    top: 25px;
+}
+
+#btnCerrarSesion {
+    text-decoration: none !important;
+    color: #FFF;
+    cursor: pointer;
+}
